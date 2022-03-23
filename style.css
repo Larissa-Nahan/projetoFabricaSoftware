@@ -10,10 +10,11 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-size: 100%;
 }
 
 .cabecalho {
@@ -22,6 +23,7 @@ body {
   align-items: center;
   justify-content: space-around;
   padding: 25px;
+  gap: 300px;
 }
 
 .logo {
@@ -31,4 +33,60 @@ body {
 .menu {
   display: flex;
   gap: 65px;
-} 
+}
+
+.item-menu {
+  font-size: 20px;
+  color: black;
+}
+
+.area-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2px solid gray;
+  padding: 50px;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.titulo {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.botao {
+  text-transform: uppercase;
+  height: 109px;
+  width: 419px;
+  background-color: var(--cor-botao);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.botao:hover {
+  background-color: var(--cor-botao-foco);
+  cursor: pointer;
+}
+
+.rodape {
+  padding: 45px;
+  border-top: 2px solid gray;
+  text-align: center;
+}
+
+.paragrafo-rodape {
+  text-transform: uppercase;
+}
